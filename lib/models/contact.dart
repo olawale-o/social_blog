@@ -29,7 +29,7 @@ var contacts = <Contact>[
     lastMessage: "Check mail please"
   ),
   Contact(
-    fullName: "Connie Larnie",
+    fullName: "Connie Lane",
     image: "lib/assets/profile_three.jpg",
     duration: "yesterday",
     lastMessage: "Where are you ?"
