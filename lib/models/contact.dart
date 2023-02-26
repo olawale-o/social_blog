@@ -14,6 +14,14 @@ class Contact {
   });
 }
 
+final Contact pinnedChat = Contact(
+  fullName: "Robert Richards",
+  image: "lib/assets/profile_one.jpg",
+  duration: "5m",
+  lastMessage: "Hello, tomorrow in 5 o'clock",
+  unreadMessages: 2,
+);
+
 var contacts = <Contact>[
   Contact(
     fullName: "Wendy Watson",
