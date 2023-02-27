@@ -36,6 +36,27 @@ class PinnedChat extends StatelessWidget {
                                   fit: BoxFit.cover
                               )
                           ),
+                        ),
+                        Positioned(
+                          bottom: 2,
+                          right: 5,
+                          child: Container(
+                            padding: const EdgeInsets.all(2.0),
+                            width: 10.0,
+                            height: 10.0,
+                            decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(50.0)
+                            ),
+                            child: Container(
+                              width: 5.0,
+                              height: 5.0,
+                              decoration: BoxDecoration(
+                                color: lemonColor,
+                                borderRadius: BorderRadius.circular(50.0)
+                              ),
+                            ),
+                          ),
                         )
                       ],
                     ),
