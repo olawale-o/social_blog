@@ -29,6 +29,23 @@ class MessagePage extends StatelessWidget {
           SizedBox(width: 16.0,)
         ],
       ),
+      bottomNavigationBar: BottomNavigationBar(
+        selectedItemColor: blueColor,
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'Home'
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.message),
+            label: 'Message'
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person),
+            label: "User"
+          )
+        ],
+      ),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
