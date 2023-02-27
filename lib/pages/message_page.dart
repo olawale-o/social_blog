@@ -1,12 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../widgets/widgets.dart';
-import '../models/models.dart';
 import '../colors/colors.dart';
 
-class MessagePage extends StatelessWidget {
+class MessagePage extends StatefulWidget {
   const MessagePage({Key? key}) : super(key: key);
 
+  @override
+  State<MessagePage> createState() => _MessagePageState();
+}
+
+class _MessagePageState extends State<MessagePage> {
+  int selectedIndex = 1;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,6 +36,7 @@ class MessagePage extends StatelessWidget {
       ),
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: blueColor,
+        currentIndex: selectedIndex,
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
