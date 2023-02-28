@@ -32,7 +32,7 @@ var contacts = <Contact>[
   ),
   Contact(
     fullName: "Harold Howard",
-    image: "lib/assets/profile_one.jpg",
+    image: "lib/assets/profile_two.jpg",
     duration: "1h",
     lastMessage: "Check mail please"
   ),

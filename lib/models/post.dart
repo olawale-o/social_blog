@@ -20,11 +20,7 @@ class Post {
 
 var posts = <Post>[
   Post(
-      text: "Working on a large project \n"
-          "I was thinking about \n"
-          "potential features and tools \n"
-          "that could be added \n"
-          "to Figma. One of them is BreakPoints",
+      text: "Working on a large project I was thinking about potential features and tools that could be added to Figma. One of them is BreakPoints",
       contact: contacts[1],
       duration: "4mins ago",
       likeCount: 25,
@@ -32,14 +28,7 @@ var posts = <Post>[
       likedBy: contacts.sublist(0, 3),
   ),
   Post(
-      text: "Putting an exact expiry date \n"
-          "on Python would be so \n"
-          "much speculation \n"
-          ", it might as well pass as \n"
-          "Science-Fiction, Instead, i will access \n"
-          "the virtues that are boosting Python's \n"
-          "popularity right now, and the \n weak points that will \n"
-          "break it in the future",
+      text: "Putting an exact expiry date on Python would be so much speculation, it might as well pass as Science-Fiction, Instead, i will access the virtues that are boosting Python's popularity right now, and the weak points that will break it in the future",
       contact: contacts[1],
       duration: "15hrs ago",
       likeCount: 25,
