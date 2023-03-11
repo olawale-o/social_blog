@@ -12,6 +12,12 @@ class MessagePage extends StatefulWidget {
 
 class _MessagePageState extends State<MessagePage> {
   int selectedIndex = 1;
+  bool popBox = false;
+  void onBoxPop() {
+    setState(() {
+      popBox = !popBox;
+    });
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -72,6 +78,8 @@ class _MessagePageState extends State<MessagePage> {
                     MessageList(),
                   ],
                 ),
+                CustomFab(onBoxPop: onBoxPop,),
+               PopUpCard(popBox: popBox,),
               ],
             ),
           ),
