@@ -79,7 +79,7 @@ class _MessagePageState extends State<MessagePage> {
                   ],
                 ),
                 CustomFab(onBoxPop: onBoxPop,),
-               PopUpCard(popBox: popBox,),
+               PopUpCard(popBox: popBox, onBoxPop: onBoxPop,),
               ],
             ),
           ),
