@@ -1,16 +1,26 @@
 # social_blog
 
-A new Flutter project.
+# Built with
+- Dart
+- Flutter
 
-## Getting Started
+# Getting started
+## To get a local copy of this repository kindly follow the steps below.
+- Scroll to top of this current repository
+- Click on the `Code` button with background color green on the right end corner
+- Click on the clipboard icon on the extreme right of the dropdown to copy the repository link
+- In your local PC, open your terminal or command prompt in the folder you would like to clone this repository into
+- Type `git clone (copied link)` on the currently opened terminal or command prompt
+- Remember to change `(copied link)` to `git@github.com:olawale-o/social_blog.git` which is the name of the repository
 
-This project is a starting point for a Flutter application.
+# Contributing
+Contributions, issues, and feature requests are welcome!
 
-A few resources to get you started if this is your first Flutter project:
+Feel free to check the [issues page.](https://github.com/olawale-o/social_blog/issues)
+## Show your support
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Give a ⭐️ if you like this project!
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Acknowledgement
+- [Purrweb](https://www.purrweb.com/)
+- [Dribble](https://www.dribble.com/)
