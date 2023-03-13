@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:go_router/go_router.dart';
 import '../models/models.dart';
 import '../colors/colors.dart';
 import '../widgets/widgets.dart';
@@ -12,7 +13,14 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  final tabs = <String>['root', 'messages', 'users'];
   int selectedIndex = 0;
+  void switchTab(int i) {
+    setState((){
+      selectedIndex = i;
+    });
+    context.pushNamed(tabs[i]);
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,24 +33,7 @@ class _HomePageState extends State<HomePage> {
         ),),
         backgroundColor: Colors.transparent,
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        selectedItemColor: blueColor,
-        currentIndex: selectedIndex,
-        items: [
-          BottomNavigationBarItem(
-              icon: Icon(Icons.home),
-              label: 'Home'
-          ),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.message),
-              label: 'Message'
-          ),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.person),
-              label: "User"
-          )
-        ],
-      ),
+      bottomNavigationBar: BottomBar(selectedIndex: selectedIndex, switchTab: switchTab,),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(

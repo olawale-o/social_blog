@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:go_router/go_router.dart';
 import '../widgets/widgets.dart';
 import '../colors/colors.dart';
 
@@ -17,6 +18,14 @@ class _MessagePageState extends State<MessagePage> {
     setState(() {
       popBox = !popBox;
     });
+  }
+
+  final tabs = <String>['root', 'messages', 'users'];
+  void switchTab(int i) {
+    setState((){
+      selectedIndex = i;
+    });
+    context.pushNamed(tabs[i]);
   }
   @override
   Widget build(BuildContext context) {
@@ -40,24 +49,7 @@ class _MessagePageState extends State<MessagePage> {
           SizedBox(width: 16.0,)
         ],
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        selectedItemColor: blueColor,
-        currentIndex: selectedIndex,
-        items: [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Home'
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.message),
-            label: 'Message'
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            label: "User"
-          )
-        ],
-      ),
+      bottomNavigationBar: BottomBar(selectedIndex: selectedIndex, switchTab: switchTab,),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
